@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="300" height="300">
+</canvas>
+<script>
+    var answer = prompt("enter a radius");
+    var number = parseInt(answer);
+
+        context.beginPath();
+        context.arc(50, 40, 40, 0, number * Math.PI, true);
+        context.closePath();
+        context.fill();
+function draw() {
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+
+}
+</script>
+</body>
+</html>
